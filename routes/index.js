@@ -9,5 +9,13 @@ router.post('/update/:id',Update);
 router.get('/delete/:id',delete_user);                             
 router.get('/:page',page_no);                             
 
+router.get('/',function(req,res,next){
+    res.render('index',{title: 'Express Index'})
+})
+
+router.get('/dashboard',function(req,res,next){
+    res.render('dashboard',{title: 'Dashboard index'})
+})
+
 
 module.exports = router;
