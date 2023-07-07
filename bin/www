@@ -9,7 +9,7 @@ var debug = require('debug')('register-api:server');
 var http = require('http');
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://127.0.0.1:27017/Register_API')
+mongoose.connect('mongodb+srv://jayankoliya03:9913764013@cluster0.munurht.mongodb.net//Register_API')
   .then(() => console.log('Connected!'));
 
 /**
