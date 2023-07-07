@@ -5,7 +5,7 @@ const { Register, Log_in, Update, delete_user, page_no  } = require('../controll
 // data insert 
 
 router.get('/',function(req,res,next){
-    res.render('index',{title: 'Express Index'})
+    res.render('index')
 })
 
 router.get('/dashboard',function(req,res,next){

@@ -12,7 +12,7 @@ const Register = async (req,res) => {
             status:"Success",
             data
         })
-    }   
+    }
     else{
         res.status(200).json({  
             status:"Your email address is already register"
@@ -31,9 +31,10 @@ const Log_in = async (req,res) =>{
     {
         if (data[0].password == req.body.password) 
         {
-            res.status(200).json({
-                status:"sucess"
-            })    
+            // res.status(200).json({
+            //     status:"sucess"
+            // })   
+            res.redirect('/dashboard')
         }
         else
         {
